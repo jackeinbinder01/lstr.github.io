@@ -65,9 +65,9 @@ function toggleTheme() {
 
     // Change the value of href attribute  
     // to change the css sheet. 
-    if (theme.getAttribute('href') == '/static/lstr_dark_theme.css') { 
-        theme.setAttribute('href', '/static/lstr_light_theme.css'); 
+    if (theme.getAttribute('href') == 'lstr_dark_theme.css') { 
+        theme.setAttribute('href', 'lstr_light_theme.css'); 
     } else { 
-        theme.setAttribute('href', '/static/lstr_dark_theme.css'); 
+        theme.setAttribute('href', 'lstr_dark_theme.css'); 
     } 
 } 
