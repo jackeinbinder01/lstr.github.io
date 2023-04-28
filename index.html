@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>('lstr')</title>
+        <link rel="stylesheet" href="/static/lstr_dark_theme.css">
+        <link rel="icon" href="/img/untitled.png">
+
+    </head>
+    <body class="global">
+
+        <div class="header">
+
+            <a class="title-logo" onClick="toggleTheme()" >
+                ('lstr')
+            </a>
+
+            <h2 class="sub-title-logo">
+                The ultimate list generator, for you
+            </h2>
+
+        </div>
+
+        <div class="main-body">
+
+
+                <form method="POST" action="/">
+
+                    <div class="text-label">
+
+                        <label for="input">Input:</label>
+
+                    </div>
+                    
+                    <div class="input-block">
+
+                        <textarea class="text-block" id="input" name="input" rows="10" placeholder="enter input here" updateOutput()></textarea>
+
+                    </div>
+
+                    <div class="text-label">
+
+                        <label for="output">Output:</label>
+
+                    </div>
+
+                    <div class="output-block">
+
+                        <textarea class="text-block" readonly id="output" rows="10" name="output"></textarea>
+
+                    </div>
+                     
+                    <div class="text-label">
+
+                        <label for="separator">Separator:</label>
+
+                    </div>   
+                    
+                    <div class="separator-block">
+
+                        <textarea class="text-block" id="separator" name="separator" rows="1" placeholder="enter seperator here" updateOutput()></textarea>
+                    
+                    </div>
+
+
+                    <div class="quote-label">
+
+
+                    </div>
+                    
+                    <div class="radio-group">
+
+                        <label class = 'radio-inline'>
+                            <input type="radio" id="no-quote" name="quote" value="No Quotes" checked>No Quote
+                        </label>
+                        <label class = 'radio-inline'>
+                            <input type="radio" id="single-quote" name="quote" value="Single Quote">Single Quote
+                        </label>
+                        <label class = 'radio-inline'>
+                            <input type="radio" id="double-quote" name="quote" value="Double Quote">Double Quote
+                        </label>
+
+                    </div>
+                    
+                    <div class="copy-button-block">
+
+                        <input type="button" class="copy-button" id="copy-button" value="Copy to Clipboard" onclick="copyToClipboard()">
+
+                    </div>
+
+                </form>
+
+                <div class="page-bottom">
+               
+                </div>
+
+            </div>
+
+                <script src="\JS\lstr.js"></script>
+    </body>
+</html>
+
